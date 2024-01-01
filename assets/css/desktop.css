@@ -1,5 +1,10 @@
 .countdown{
     width: 56rem;
     font-size: 5.6rem;
-    height: 6.6rem;
+    min-height: 6.6rem;
+}
+
+.message{
+    width: 60rem;
+    font-size: 2.6rem;
 }

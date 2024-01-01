@@ -21,7 +21,6 @@ let x = setInterval(function() {
     document.getElementById("hours").innerHTML = hours + 'h';
     document.getElementById("minutes").innerHTML = minutes + 'm';
     document.getElementById("seconds").innerHTML = seconds + 's';
-    
     // Display a message when the countdown is over
     if (distance < 0) {
         // The setInterval function is used to repeatedly execute a function at specified intervals. 
@@ -29,6 +28,9 @@ let x = setInterval(function() {
         // need to update it every second, so we clear the interval using clearInterval(x) to stop 
         //the countdown updates.
         clearInterval(x);
-        // document.getElementById("countdown").innerHTML = "Happy New Year!";
+        // show the message itself
+        document.getElementById("message").classList.remove("hide-element");
+        // hide the countdown
+        document.getElementById("countdown").classList.add("hide-element");
     }
 }, delayCountDown);
